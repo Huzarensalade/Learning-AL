@@ -1,13 +1,13 @@
-report 50113 "Vendor Report"
+report 50102 "Report Customer"
 {
-    ApplicationArea = All;
-    Caption = 'Vendor Report';
+    Caption = 'Report Customer';
     UsageCategory = ReportsAndAnalysis;
-    ExcelLayout = 'Test/Vendor Report.xlsx';
+    WordLayout = 'Templates/Customer Report.docx';
+    DefaultLayout = Word;
 
     dataset
     {
-        dataitem(Vendor; Vendor)
+        dataitem(Customer; Customer)
         {
             column(Name; Name)
             {
@@ -15,13 +15,13 @@ report 50113 "Vendor Report"
             column(City; City)
             {
             }
-            column(PartnerType; "Partner Type")
-            {
-            }
-            column(PurchasesLCY; "Purchases (LCY)")
-            {
-            }
             column(Balance; Balance)
+            {
+            }
+            column(Contact; Contact)
+            {
+            }
+            column(PartnerType; "Partner Type")
             {
             }
         }
