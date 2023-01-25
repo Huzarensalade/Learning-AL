@@ -96,6 +96,20 @@ page 50102 "Actions Demo"
                 Image = Post;
             }
         }
+
+        area(Reporting)
+        {
+            group(TopNCustomer)
+            {
+                Caption = 'Top N Customer';
+                action("Top N Customer")
+                {
+                    ApplicationArea = All;
+                    RunObject = Report TopNCustomers;
+                    Image = Report2;
+                }
+            }
+        }
     }
 
     var
