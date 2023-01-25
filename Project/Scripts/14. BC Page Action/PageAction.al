@@ -86,6 +86,16 @@ page 50102 "Actions Demo"
                 }
             }
         }
+
+        area(Creation)
+        {
+            action("New Customer")
+            {
+                ApplicationArea = All;
+                RunObject = page "Customer Card";
+                Image = Post;
+            }
+        }
     }
 
     var
