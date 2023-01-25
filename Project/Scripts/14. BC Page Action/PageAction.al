@@ -57,7 +57,33 @@ page 50102 "Actions Demo"
                 trigger OnAction()
                 begin
                     FinalAmount := Initialamount * (1 + RateOfInterest * NoOfYears);
+                    Message('%1', FinalAmount);
                 end;
+            }
+        }
+
+        area(Navigation)
+        {
+            group("More Information")
+            {
+                Caption = 'More Data';
+
+                group("More Details")
+                {
+                    action("Customer")
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Customer Details';
+                        RunObject = page "Customer Card";
+                    }
+
+                    action("Sales")
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Sales Details';
+                        RunObject = page "Sales Analysis View Card";
+                    }
+                }
             }
         }
     }
